@@ -1,10 +1,11 @@
-# Function to check if a number is even
-def is_even(number):
-    return number % 2 == 0
+# Function to generate even numbers up to a given limit
+def generate_even_numbers(limit):
+    even_numbers = []
+    for num in range(2, limit + 1, 2):
+        even_numbers.append(num)
+    return even_numbers
 
 # Example usage
-num = 10
-if is_even(num):
-    print(f"{num} is even")
-else:
-    print(f"{num} is odd")
+limit = 1000
+even_numbers = generate_even_numbers(limit)
+print(f"Even numbers up to {limit}: {even_numbers}")
