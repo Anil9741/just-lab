@@ -1,8 +1,10 @@
-a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# Function to check if a number is even
+def is_even(number):
+    return number % 2 == 0
 
-# Iterate through each element in the list
-for val in a:
-  
-    # Checks if a number is divisible by 2 (i.e., even).
-    if val % 2 == 0:
-        print(val, end = " ")
+# Example usage
+num = 10
+if is_even(num):
+    print(f"{num} is even")
+else:
+    print(f"{num} is odd")
