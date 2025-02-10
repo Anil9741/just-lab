@@ -6,6 +6,6 @@ def generate_even_numbers(limit):
     return even_numbers
 
 # Example usage
-limit = 1000
+limit = 613
 even_numbers = generate_even_numbers(limit)
 print(f"Even numbers up to {limit}: {even_numbers}")
